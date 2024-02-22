@@ -194,7 +194,8 @@
 									"pm.test(\"Expected booking id is in the returned array\", function () {",
 									"    pm.expect(booking_ids).to.include(pm.variables.get(\"booking_id\"));",
 									"});",
-									""
+									"",
+									"postman.setNextRequest(\"Ping\");"
 								],
 								"type": "text/javascript"
 							}
